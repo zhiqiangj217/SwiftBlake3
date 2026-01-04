@@ -8,8 +8,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "swift-blake3",
-            targets: ["swift-blake3"]
+            name: "SwiftBlake3",
+            targets: ["SwiftBlake3"]
         ),
     ],
     targets: [
@@ -27,14 +27,14 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "swift-blake3",
+            name: "SwiftBlake3",
             dependencies: [
                 "CBlake3"
             ],
         ),
         .testTarget(
-            name: "swift-blake3Tests",
-            dependencies: ["swift-blake3"],
+            name: "SwiftBlake3Tests",
+            dependencies: ["SwiftBlake3"],
             resources: [
                 .process("test_vectors")
             ]

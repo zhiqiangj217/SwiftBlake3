@@ -1,7 +1,7 @@
 import Testing
 import Foundation
 
-@testable import swift_blake3
+@testable import SwiftBlake3
 
 extension Data {
     var hexString: String {
