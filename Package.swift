@@ -22,7 +22,7 @@ let package = Package(
     targets: [
         
         .target(name: "CBlake3",
-                path: "Sources/blake3-1.8.2",
+                path: "Sources/blake3-1.8.3",
                 exclude: exclude,
                 cSettings: [
                     .define("BLAKE_USE_NEON", to: "1", .when(platforms: [.macOS, .iOS, .tvOS, .watchOS])),
